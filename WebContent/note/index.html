@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Note title</title>
+    <link rel="stylesheet" href="../css/note.css">
+    <script src="../js/memo.js"></script>
+</head>
+
+<body>
+    <header id="main">
+        <!-- 로고 -->
+
+        <div class="name">
+            <img src="../images/temp_.svg" class="logo" alt="logo">
+            <h1>CleverNote</h1>
+        </div>
+        <!--  -->
+        <div class="hamburger">
+            <button><img id="hamburger" src="../images/hamburger.svg" alt=""></button>
+        </div>
+    </header>
+    <!-- <aside class="active"> -->
+    <aside>
+        <!-- <nav id="toolbox" class="active"> -->
+        <nav id="toolbox">
+            <div class="hidden-header">                
+                <button id="sidebar-closebtn" class="closebtn"><img src="../images/close.svg" alt="close"></button>
+            </div>
+            <div class="header">
+                <h1>Toolbox</h1>
+                <hr>
+            </div>
+            <div class="button-list">
+                <!-- 새 매모 -->
+                <button id="listbtn">
+                    <img src="../images/list.svg" alt="new memo">
+                    <h4>노트 리스트</h4>
+                </button>
+                <button>
+                    <img src="../images/plus.svg" alt="new memo">
+                    <h4>새 메모</h4>
+                </button>
+                <!-- 검색 -->
+                <button>
+                    <img src="../images/search.svg" alt="search">
+                    <h4>검색</h4>
+                </button>
+                <!-- 공유 -->
+                <button>
+                    <img src="../images//share.svg" alt="share">
+                    <h4>공유</h4>
+                </button>
+                <!-- 바로가기 -->
+                <button>
+                    <img src="../images/bookmark.svg" alt="bookmark">
+                    <h4>북마크</h4>
+                </button>
+                <!-- 카데고리 -->
+                <button>
+                    <img src="../images/category.svg" alt="category">
+                    <h4>카데고리</h4>
+                </button>
+                <!-- 태그 -->
+                <button>
+                    <img src="../images/tag1.svg" alt="tag">
+                    <h4>태그</h4>
+                </button>
+                <!-- 도움말 -->
+                <button>
+                    <img src="../images/help.svg" alt="help">
+                    <h4>도움말</h4>
+                </button>
+                <!-- 설정 -->
+                <button>
+                    <img src="../images/setting.svg" alt="setting">
+                    <h4>설정</h4>
+                </button>
+                <!-- 설정 -->
+                <button id="logoutbtn">
+                    <img src="../images/logout.svg" alt="setting">
+                    <h4>로그아웃</h4>
+                </button>
+            </div>
+        </nav>
+        <section id="note-list">
+        <!-- <section id="note-list" class="active"> -->
+            <div class="note-category-name">
+                <h3 class="category-title">프로그래밍</h3>
+                <h6>14개의 노트</h6>
+                <div class="toolbox">
+                    <button><img src="../images/share.svg" alt=""></button>
+                    <button class="closebtn"><img src="../images/close.svg" alt=""></button>
+                </div>
+            </div>
+            <hr>
+            <div class="list">
+                <div class="note-list-item">
+                    <h4>프로그래밍 관련 기사 스크랩</h4>
+                    <p class="date">2019-12-22</p>
+                    <p class="content-summary">summary</p>
+                    <div class="toolbox">
+                        <button><img src="../images/open.svg" alt="open"></button>
+                        <button><img src="../images/share.svg" alt=""></button>
+                        <button><img src="../images/trashcan.svg" alt=""></button>
+                    </div>
+                </div>
+                <hr>
+                <div class="note-list-item">
+                    <h4>프로그래밍 관련 기사 스크랩</h4>
+                    <p class="date">2019-12-12</p>
+                    <p class="content-summary">summary</p>
+                    <div class="toolbox">
+                        <button><img src="../images/open.svg" alt="open"></button>
+                        <button><img src="../images/share.svg" alt=""></button>
+                        <button><img src="../images/trashcan.svg" alt=""></button>
+                    </div>
+                </div>
+                <hr>
+                <div class="note-list-item">
+                    <h4>프로그래밍 관련 기사 스크랩</h4>
+                    <p class="date">2019-12-09</p>
+                    <p class="content-summary">summary</p>
+                    <div class="toolbox">
+                        <button><img src="../images/open.svg" alt="open"></button>
+                        <button><img src="../images/share.svg" alt="share"></button>
+                        <button><img src="../images/trashcan.svg" alt="remove"></button>
+                    </div>
+                </div>
+                <hr>
+                <div class="note-list-item">
+                    <h4>프로그래밍 관련 기사 스크랩</h4>
+                    <p class="date">2019-11-30</p>
+                    <p class="content-summary">summary</p>
+                    <div class="toolbox">
+                        <button><img src="../images/open.svg" alt="open"></button>
+                        <button><img src="../images/share.svg" alt="share"></button>
+                        <button><img src="../images/trashcan.svg" alt="remove"></button>
+                    </div>
+                </div>
+                <hr>
+                <div class="note-list-item">
+                    <h4>프로그래밍 관련 기사 스크랩</h4>
+                    <p class="date">2019-11-30</p>
+                    <p class="content-summary">summary</p>
+                    <div class="toolbox">
+                        <button><img src="../images/open.svg" alt="open"></button>
+                        <button><img src="../images/share.svg" alt="share"></button>
+                        <button><img src="../images/trashcan.svg" alt="remove"></button>
+                    </div>
+                </div>
+                <hr>
+                <div class="note-list-item">
+                    <h4>프로그래밍 관련 기사 스크랩</h4>
+                    <p class="date">2019-11-30</p>
+                    <p class="content-summary">summary</p>
+                    <div class="toolbox">
+                        <button><img src="../images/open.svg" alt="open"></button>
+                        <button><img src="../images/share.svg" alt="share"></button>
+                        <button><img src="../images/trashcan.svg" alt="remove"></button>
+                    </div>
+                </div>
+                <hr>
+                <div class="note-list-item">
+                    <h4>프로그래밍 관련 기사 스크랩</h4>
+                    <p class="date">2019-11-30</p>
+                    <p class="content-summary">summary</p>
+                    <div class="toolbox">
+                        <button><img src="../images/open.svg" alt="open"></button>
+                        <button><img src="../images/share.svg" alt="share"></button>
+                        <button><img src="../images/trashcan.svg" alt="remove"></button>
+                    </div>
+                </div>
+                <hr>
+                <div class="note-list-item">
+                    <h4>프로그래밍 관련 기사 스크랩</h4>
+                    <p class="date">2019-11-30</p>
+                    <p class="content-summary">summary</p>
+                    <div class="toolbox">
+                        <button><img src="../images/open.svg" alt="open"></button>
+                        <button><img src="../images/share.svg" alt="share"></button>
+                        <button><img src="../images/trashcan.svg" alt="remove"></button>
+                    </div>
+                </div>
+                <hr>
+                <div class="note-list-item">
+                    <h4>프로그래밍 관련 기사 스크랩</h4>
+                    <p class="date">2019-11-30</p>
+                    <p class="content-summary">summary</p>
+                    <div class="toolbox">
+                        <button><img src="../images/open.svg" alt="open"></button>
+                        <button><img src="../images/share.svg" alt="share"></button>
+                        <button><img src="../images/trashcan.svg" alt="remove"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </aside>
+    <section id="main-content">
+
+        <header>
+            <div class="note-control">
+                <div class="bundle">
+                    <button>
+                        북마크 추가
+                    </button>
+                </div>
+                <div class="bundle">
+                    <button>
+                        삭제
+                    </button>
+                    <button class="edit">
+                        수정
+                    </button>
+                    <button class="">
+                        공유
+                    </button>
+                </div>
+            </div>
+            <!-- <hr> -->
+            <div class="tag-container">
+                <span class="placeholder">머신러닝</span>
+                <span class="placeholder">태그 추가..</span>
+            </div>
+            <hr>
+            <div class="editor-control">
+                
+            </div>
+        </header>
+        <div class="content-block">
+            <h1 class="title">머신러닝 자료</h1>
+            <div class="content-body">
+                <h3>강의 자료 정리</h3>
+                <ul>
+                    <li>Pattern Recognition & Machien Learning, Bishop 정리자료</li>
+                    <br>
+                    <li>앤드류 응의 머신러닝 강의 정리 week1 </li>
+                    <br>
+                    <li>Machine Learning 강의노트 - WikiDocs</li>
+                    <br>
+                    <li>Team-Neighborhood/I-want-to-study-Data-Science</li>
+                    <br>
+                </ul>
+                <h4>형태소 분석기</h4>
+                <ul>
+                    <li>
+                        <p>Khaiii</p>
+                        <ul>
+                            <li>카카오에서 개발한 형태소 분석기</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>twitter-korean-text</p>
+                        <ul>
+                            <li>트위터에서 만든 오픈소스 한국어 처리기</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>은전 한닢 MECAB</p>
+                        <ul>
+                            <li>한글 형태소 분석기 </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+@charset "utf8";    
+body{
+    margin: 0;
+    padding:0;
+}
+header#main{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width:100%;
+    padding:0.5em;
+    box-sizing: border-box;
+    background-color: white;
+    /* border-bottom: black solid 1px; */
+}
+
+header h1{
+    display: inline;
+}
+header  button{
+    background: none;
+    border: none;
+    /* outline: 1px solid; */
+}
+header img#hamburger{
+    background: none;
+    border: none;
+    margin: 0.5em;
+    height: 2.25em;
+
+    /* outline: 1px solid; */
+}
+section{
+    width:100%;
+    /* height:1000px; */
+    height:100%;
+}
+/* test */
+aside{
+    background:rgba(0,0,0,0.4);
+    outline: black solid 1px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+aside{
+    /* display: flex; */
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+aside>nav#toolbox{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+aside>nav#toolbox .hidden-header{
+    align-self: flex-end;
+}
+aside>nav#toolbox .header{
+    background-color: white;
+    width: 100%;
+    padding:0 1em;
+    text-align: center;
+    box-sizing: border-box;
+}
+aside button#sidebar-closebtn{
+    /* position: absolute;
+    top:0%;
+    right:0%; */
+    align-self: flex-end;
+    height: 2em;
+    background: none;
+    border:none;
+    z-index: 100;    
+}
+
+aside>nav#toolbox .button-list {
+    width:100%;
+    height: fit-content;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:0 1em;
+    background-color: white;    
+}
+aside>nav#toolbox img{
+    height:4em;
+    width:4em;    
+}
+aside button#sidebar-closebtn img{    
+    height: 2.625em;
+    width: 2.625em;
+    z-index: 100;
+}
+aside>nav#toolbox h4{
+    margin:0em;
+    font-weight: 900;
+    font-size: 1.25em;
+}
+aside>nav#toolbox .button-list button{
+    background-color:white;    
+    width: 8em;
+    height: 8em;
+    border-radius: 4em;
+    border:0;
+    margin:0.4em;    
+}
+aside>nav#toolbox {
+    display: none;
+}
+aside>nav#toolbox.active {
+    display: flex;
+}
+aside.active{
+    display: flex;
+}
+
+aside>section#note-list{
+    display: none;    
+    width:90%;
+    height:90%;
+    background-color: white;
+    padding: 0 .8em;
+}
+aside>section#note-list.active{
+    display: block;
+}
+aside>section#note-list > .note-category-name{
+    position: relative;
+}
+aside>section#note-list > .note-category-name  .toolbox{
+    position: absolute;
+    top:0em;
+    right:0em;
+}
+aside>section#note-list>hr{
+    border-color: black;
+}
+aside>section#note-list .list{
+    overflow: scroll;
+    height:80%
+}
+aside>section#note-list .list>.note-list-item{    
+    height:20%
+}
+aside>section#note-list .list>hr{
+    width:98%;
+    /* border-color: lightgray; */
+    
+}
+aside>section#note-list .list p.date{
+    font-size: .9em;
+    color: #222222;
+}
+aside>section#note-list .note-list-item{
+    /* display: none; */
+    position: relative;
+    width:90%;
+    height:90%;
+    background-color: white;
+    padding: .4em;
+}
+
+aside>section#note-list .list .toolbox{
+    position: absolute;
+    display: flex;
+    top:1em;
+    right:0;
+}
+aside>section#note-list .toolbox>button{
+    background:none;
+    border: none;    
+    height: 100%;
+}
+aside>section#note-list .toolbox>button>img{
+    width:2em;        
+}
+
+section#main-content{
+    padding-top:3.3em;
+    box-sizing: border-box;
+}
+#main-content .note-control {
+    display: flex;
+    padding: 0.5em;
+    justify-content: space-between;
+}
+#main-content .note-control button{
+    margin: 0.3em;
+    border:2px solid #44aa99;
+    border-radius: 0.5em;
+    padding: 0.4em;
+    color: #44aa99;
+}
+#main-content .content-block{
+    overflow: scroll;
+    padding: 0 0.5em 0.5em 0.5em;
+}
+#main-content .content-block .title{
+    color:#44aa99;
+    font-weight: 800;
+}
+#main-content > header > hr {
+    width: 92%;
+    margin-top: 0;
+    margin-bottom: 0;
+    /* border-color: #aaaaaa; */
+    /* border: 1px 0 0 0 solid #ffffff; */
+    /* background-color: #ffffff; */
+    /* color: blue; */
+
+    
+}
+#main-content .tag-container{
+    height: 1em;
+    padding: 0.2em 1em ;
+    margin-bottom: 0.5em;
+    
+}
+#main-content .tag-container>span{
+    color: #202020;
+    background-color: lightgray;
+    font-size: 0.8em;
+    padding: 0.3em 0.5em;
+    border-radius: 0.4em;
+}
+/* note list toolbox */
+aside>section#note-list .list .note-list-item .toolbox{        
+    /* left:0em; */
+    /* top:80%; */
+    /* height: fit-content; */
+    height: 90%;
+    width:100%;
+    display: flex;
+    visibility: hidden;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+}
+aside>section#note-list .list .note-list-item:hover .toolbox{    
+    visibility: visible;
+
+    background-color: white;
+}
+@media screen and (min-width:768px){
+    #main-content.active{
+        width:70%;
+        float:right;
+    }
+    header#main.active{
+        right:0%;
+        width:70%;
+    }
+    aside.active{
+        display: flex;
+        width:30%;
+        float:left;
+    }
+    aside>nav#toolbox{
+        width:99%;
+        height:100%;
+    }
+    #sidebar-closebtn{
+        display: none;
+    }
+    aside>section#note-list{
+        height: 100%;
+    }
+    /* .closebtn{
+        display: none;
+    } */
+    aside>nav#toolbox .button-list{
+        overflow: scroll;
+        height: 100%;
+        
+    }
+    aside>nav#toolbox img{
+        height:4em;
+        width:4em;    
+    }
+    
+    aside>section#note-list .list .toolbox button{
+        height: fit-content;
+    }
+    #main-content .tag-container{
+        padding: 0.2em 1em 0.2em 1.5em;
+    }
+    #main-content > header > hr {
+        width:95%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    
+    aside>nav#toolbox{
+        width:20%;
+    }
+    aside>nav#toolbox #listbtn,
+    aside .closebtn,
+    aside>nav#toolbox>.header{
+        display: none;
+    }
+    aside>section#note-list{
+        display: block;
+        width:80%;
+    }
+    #main-content .tag-container{
+        padding: 0.2em 1em 0.2em 1.5em;
+    }
+    #main-content > header > hr {
+        width:97%;
+    }
+}

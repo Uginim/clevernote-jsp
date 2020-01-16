@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* * {
+  outline:1px solid red;
+} */
+div {
+  box-sizing: border-box;
+  padding:3px;
+}
+html,body{
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header{
+  display: flex;
+
+}
+form {  
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 40em;
+}
+.content{
+  display:flex;
+  flex-direction: column;
+  width:300px;
+  height:500px;
+}
+.content {
+  flex:1 1 3em;  
+}
+.content .join-title{
+  margin: 0.2em;
+}
+.content hr {
+  border-color: gray;
+  width: 95%;
+}
+.content .input-boundary{
+  box-sizing: border-box;
+  border:1px solid gray;
+  padding:1px;
+  padding-left:10px;
+  background-color:white;
+  border-radius: 5px;
+  height: 2em;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.form-item{
+  margin-bottom: 0.5em;
+  display: flex;
+  /* flex-direction: ; */
+}
+.form-item label {
+  flex:1 1 10em;
+}
+.form-item .input-boundary{
+  flex:2 4 30em;
+}
+.duplication-check{
+  flex:1 6em;
+}
+.join-title{
+  text-align: center;
+  letter-spacing: 0.5em;
+}
+
+input { 
+  width:85%;
+  border:none;
+}
+input[type=radio] {
+  width:auto;
+}
+.errmsg {
+  color:red;
+  font-size:0.7rem;
+  font-weight:bold;
+  height:auto;
+}
+
+button, select{
+  width:290px;
+  border:none;
+}
+select{
+  width:270px;
+  height: 2.2em;
+  border:none;
+}
+#joinBtn {
+  background-color: #81ecec;
+  color:white;
+  font-weight:900;
+  border:1px solid #81ecec;
+  padding:0.4em;
+  height:3.5em;
+  border-radius: 0.5em;
+}
+
+i{
+  padding:5px 4px;
+  width: 10%;
+}
+label{
+  vertical-align: top;
+}
+button.google-oauth {
+  margin-top: 1em;
+  width:100%;
+  /* height: 3.7em; */
+  height: 40px;
+  padding:0.3em;  
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  font-size:1em;
+  font-weight: 400;
+  letter-spacing: 0em;
+  background-color: lightslategray;
+  color: white;
+}
+
+

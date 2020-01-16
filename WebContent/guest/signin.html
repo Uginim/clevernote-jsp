@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>로 그 인</title>
+  <link rel="stylesheet" href="../css/login.css">
+  <script src="../js/login.js"></script>
+</head>
+<body>
+  <header>
+    <img src="../images/temp_.svg" class="logo" alt="logo">
+    <h2>CleverNote</h3>
+  </header>
+  <div class="container">
+    <div class="login-wrapper">
+      <form id="loginForm">
+        <div><h3 class="login-title">로 그 인</h3></div>
+        <hr>
+        <div class="login-content">
+          <div><input type="text" name="" id="id" value="" placeholder="아이디"></div>
+          <div><span id="idMsg"></span></div>
+          <div><input type="password" name="" id="pw" placeholder="비밀번호"></div>
+          <div><span id="pwMsg"></span></div>
+          <div><input type="submit" name="" id="loginBtn" value="로 그 인"></div>
+        </div>
+        <div class="keeping-login-info">
+          <label for=""><input type="checkbox" name="keeping-login-info" id="keeping-login-info">로그인 정보 기억하기</label>
+        </div>
+        <button type="button" class="google-oauth">Google로 로그인</button>
+      </form>
+      <div class="find_info">
+        <a href="#">아이디 찾기</a>
+        <span>|</span>
+        <a href="#">비밀번호 찾기</a>
+        <span>|</span>
+        <a href="signup.html">회원가입</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>회원가입</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" /> -->
+    <link rel="stylesheet" href="../css/signup.css"/>
+    <script src="../js/signup.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../images/temp_.svg" class="logo" alt="logo">
+        <h2>CleverNote</h3>
+    </header>
+    <form>
+        <div class="container">
+            <div class="content">
+                <div class="title-wrapper">
+                    <h3 class="title">CleverNote 회원 가입 정보 입력</h3>
+                </div>
+                <hr>
+                <div class="policy pair-of-buttons">
+                    <button type="button" >Clever Note 약관확인</button><button type="button" >개인정보 처리방침 확인</button>
+                </div>
+                <hr>
+                <table class="form-item-list">
+                    <tr>
+                        <td><label for="id">Username</label></td>
+                        <td>
+                            <div class="form-item">
+                                <div class="input-boundary"><input type="text" name="id" id="id"></div>
+                                <button type="button" class="duplication-check">중복확인</button>
+                                <input type="checkbox" class="hidden-checkbox">
+                                <span class="errmsg" id="id-errmsg"></span>
+                            </div>
+                        </td>
+                    </tr>
+                  
+                    <tr>
+                        <td><label for="pw">비밀번호</label></td>
+                        <td>
+                            <div class="form-item">
+                                <div class="input-boundary"><input type="password" name="pw" id="pw" placeholder="비밀번호"></div>
+                                <div class="input-boundary"><input type="password" id="pwChk" placeholder="비밀번호 확인.."></div>
+                                <span class="errmsg" id="pw-errmsg"></span>
+                                <span class="errmsg" id="pwChk-errmsg"></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Mail</label></td>
+                        <td>
+                            <div class="form-item">
+                                <div class="input-boundary"><input type="email" name="email" id="email"></div>
+                                <button type="button"  class="duplication-check">중복확인</button>
+                                <input type="checkbox" class="hidden-checkbox">
+                                <span class="errmsg" id="email-errmsg"></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="tel">전화번호</label></td>
+                        <td>
+                            <div class="form-item">
+                                <div class="input-boundary"><input type="tel" name="tel" id="tel" placeholder="000-0000-0000"></div>
+                                <span class="errmsg" id="tel-errmsg"></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="region">지역</label>
+                        </td>
+                        <td>
+                            <div class="form-item">
+
+                                <div class="input-boundary">
+                                    <select name="region" id="region">
+                                        <option value="">== 선 택 ==</option>
+                                        <option value="서울">서울</option>
+                                        <option value="경기">경기</option>
+                                        <option value="대구">대구</option>
+                                        <option value="부산">부산</option>
+                                        <option value="울산">울산</option>
+                                    </select>
+                                </div>
+                                <span class="errmsg" id="region-errmsg"></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="men">성별</label></td>
+                        <td>
+                            <div class="form-item">
+
+                                <div class="input-boundary">
+                                    <input type="radio" name="gender" id="men"><label for="men">남</label>
+                                    <input type="radio" name="gender" id="women"><label for="women">여</label>
+                                </div>
+                                <span class="errmsg" id="gender-errmsg"></span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    <div class="email-subscribtion">
+                        <label><input type="checkbox"><span>이메일 수신 동의</span></label>
+                    </div>
+                </div>
+                <div class="sign-in-buttons pair-of-buttons">
+                    <button type="button" id="signup-btn">가입하기</button>
+                    <button type="button" class="google-oauth">Google로 회원가입</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

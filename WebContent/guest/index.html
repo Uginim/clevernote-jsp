@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Clever Note</title>
+    <link rel="stylesheet" href="../css/guest.css">    
+    <script src="../js/guest.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../images/temp_.svg" class="logo" alt="logo">
+        <h2>CleverNote</h3>
+        <label>
+            <input type="checkbox">
+            <nav>
+                <ul>
+                    <li>
+                        <label>
+                            <p>
+                                서비스
+                            </p>
+                            <img class="dropdown-image" src="../images/dropdown.svg" alt="">
+                            <input type="checkbox">
+                            <ul>
+                                <li><a href="#">제품 소개</a></li>
+                                <li><a href="#">서비스 등급표</a></li>
+                                <hr>
+                            </ul>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <p>
+                                기능
+                            </p>
+                            <img class="dropdown-image" src="../images/dropdown.svg" alt="">
+                            <input type="checkbox">
+                            <ul>
+                                <li><a href="#">메모</a></li>
+                                <li><a href="#">템플릿</a></li>
+                                <li><a href="#">동기화</a></li>
+                                <li><a href="#">일정관리</a></li>
+                                <li><a href="#">메모 공유</a></li>
+                                <hr>
+                            </ul>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <p>
+                                지원 및 도움말
+                            </p>
+                            <img class="dropdown-image" src="../images/dropdown.svg" alt="">
+                            <input type="checkbox">
+                            <ul>
+                                <li><a href="#">Q&A</a></li>
+                                <li><a href="#">고객 문의</a></li>
+                                <li><a href="#">계정 찾기</a></li>
+                                <hr>
+                            </ul>
+                        </label>
+                    </li>
+                </ul>
+            </nav><img id="hamburger" src="../images/hamburger.svg" alt="">
+        </label>
+        <div class='user-gate'>
+            <button class='sign-up'>
+                가입하기
+            </button>
+            <button class="log-in">
+                로그인
+            </button>
+        </div>
+    </header>
+    <section>
+        <article id="introduction-of-clevernote">
+            <h1>
+                CleverNote에 오신 것을 환영합니다~
+            </h1>
+            <p>CleverNote를 쓰시면<br> 언제든 손쉽게 메모하실 수 있습니다.</p>
+        </article>
+        <article id="introduction-of-features">
+            <h1>
+                서비스 소개
+            </h1>
+            <a class="featrue-image" href="#">
+                <h4>메모</h4>
+                <img src="../images/memo.svg" alt="">
+            </a>
+            <a class="featrue-image" href="#">
+                <h4>공유</h4>
+                <img src="../images/share.svg" alt="">
+            </a>
+            <a class="featrue-image" href="#">
+                <h4>일정</h4>
+                <img src="../images/schedule.svg" alt="">
+            </a>
+            <a class="featrue-image" href="#">
+                <h4>템플릿</h4>
+                <img src="../images/template.svg" alt="">
+            </a>
+        </article>
+        <article>
+            <h1>
+                서비스 등급
+            </h1>
+            <table>
+                <caption>
+                    
+                </caption>
+                <tr>
+                    <th>등급</th>
+                    <th>용량</th>
+                    <th>가격</th>
+                </tr>
+                <tr>
+                    <td>스탠다드</td>
+                    <td><span class="storage-amount">3</span></td>
+                    <td><span class="price-won per-month">0</span></td>
+                </tr>
+                <tr>
+                    <td>프리미엄</td>
+                    <td><span class="storage-amount">1000</span></td>
+                    <td><span class="price-won per-month">6000</span></td>
+                </tr>
+            </table>
+        </article>
+        <article class="sign-in">
+            <h1>
+                지금 바로 서비스를 이용해보세요!
+            </h1>
+            <form action="">
+                <button type="button" class="google-oauth">Google로 가입</button>
+                <div><input name="" placeholder="username" type="username"></div>
+                <div><input name="" placeholder="email" type="email"></div>
+                <div><input name="" placeholder="password" type="password"><img src="../images/lock.svg" alt="" ></div>
+                <div class="terms-of-use"><input type="checkbox"><span><a href="#">이용 약관</a> 동의</span></div>
+                <button class="sign-up" type="button">가입하기</button>
+            </form>
+        </article>
+    </section>
+    <div class="container" id="fnb">
+        <hr>
+        <nav>
+            <ul>
+                <li>
+                    <p> 서비스 </p>
+                    <ul>
+                        <li><a href="#">제품 소개</a></li>
+                        <li><a href="#">서비스 등급표</a></li>
+                    </ul>
+                    
+                </li>
+                <li>
+                    <p> 기능 </p>
+                    <ul>
+                        <li><a href="#">메모</a></li>
+                        <li><a href="#">템플릿</a></li>
+                        <li><a href="#">동기화</a></li>
+                        <li><a href="#">일정관리</a></li>
+                        <li><a href="#">메모 공유</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p> 지원 및 도움말 </p>
+                    <ul>
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">고객 문의</a></li>
+                        <li><a href="#">계정 찾기</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class='user-gate'>
+            <button class="sign-up">
+                가입하기
+            </button>
+            <p>혹은</p>
+            <button class="log-in">
+                로그인
+            </button>
+        </div>
+    </div>
+    <footer>
+        <hr>
+        <div>
+            <a href="http://uginim.com">제작자 블로그</a>
+            <span>|</span>
+            <a href="#">이용약관</a>
+            <span>|</span>
+            <a href="#">개인정보처리방침</a>
+            <span>|</span>
+            <a href="#">고객센터</a>
+        </div>
+        <hr>
+        <img src="../images/temp_.svg" class="logo" alt="logo">
+        <h3>CleverNote</h3>
+        <p class="small">
+            Copyright 2019 CleverNote Corp. All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>
